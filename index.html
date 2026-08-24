@@ -1,0 +1,1517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Praitayini Kanakaraj, Ph.D. — AI/ML Research Scientist working at the intersection of neuroimaging, medical AI, and clinical translation.">
+<title>Praitayini Kanakaraj</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600&display=swap">
+<style>
+/* ── Tokens ── */
+:root {
+  --ground: #F7F6F2;
+  --surface: #FFFFFF;
+  --surface-alt: #F0EDE8;
+  --ink: #0C1425;
+  --ink-secondary: #3A4555;
+  --ink-muted: #6B7B8D;
+  --accent: #1A6B5A;
+  --accent-hover: #15574A;
+  --accent-subtle: #E6F2EF;
+  --gilt: #D4953A;
+  --gilt-hover: #C08530;
+  --gilt-subtle: #FCF4E6;
+  --border: #DDD9D2;
+  --border-strong: #C8C3BA;
+  --hero-bg: #0C1425;
+  --hero-text: #F7F6F2;
+  --hero-muted: #8B95A8;
+  --nav-bg-scrolled: rgba(247, 246, 242, 0.97);
+  --nav-text-scrolled: #0C1425;
+  --nav-border-scrolled: rgba(0,0,0,0.06);
+  --card-shadow: 0 1px 3px rgba(12,20,37,0.04), 0 4px 14px rgba(12,20,37,0.06);
+  --card-shadow-hover: 0 2px 8px rgba(12,20,37,0.07), 0 8px 24px rgba(12,20,37,0.10);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --ground: #0C1425;
+    --surface: #131D2F;
+    --surface-alt: #101828;
+    --ink: #E4E2DD;
+    --ink-secondary: #B5BAC5;
+    --ink-muted: #7E8A9E;
+    --accent: #2EAE93;
+    --accent-hover: #38C4A6;
+    --accent-subtle: #0F2520;
+    --gilt: #E8B05A;
+    --gilt-hover: #F0C06E;
+    --gilt-subtle: #231D10;
+    --border: #1C2840;
+    --border-strong: #283854;
+    --hero-bg: #060A12;
+    --hero-text: #E4E2DD;
+    --hero-muted: #5E6A80;
+    --nav-bg-scrolled: rgba(12, 20, 37, 0.97);
+    --nav-text-scrolled: #E4E2DD;
+    --nav-border-scrolled: rgba(255,255,255,0.06);
+    --card-shadow: 0 1px 3px rgba(0,0,0,0.2), 0 4px 14px rgba(0,0,0,0.25);
+    --card-shadow-hover: 0 2px 8px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.35);
+  }
+}
+
+:root[data-theme="dark"] {
+  --ground: #0C1425;
+  --surface: #131D2F;
+  --surface-alt: #101828;
+  --ink: #E4E2DD;
+  --ink-secondary: #B5BAC5;
+  --ink-muted: #7E8A9E;
+  --accent: #2EAE93;
+  --accent-hover: #38C4A6;
+  --accent-subtle: #0F2520;
+  --gilt: #E8B05A;
+  --gilt-hover: #F0C06E;
+  --gilt-subtle: #231D10;
+  --border: #1C2840;
+  --border-strong: #283854;
+  --hero-bg: #060A12;
+  --hero-text: #E4E2DD;
+  --hero-muted: #5E6A80;
+  --nav-bg-scrolled: rgba(12, 20, 37, 0.97);
+  --nav-text-scrolled: #E4E2DD;
+  --nav-border-scrolled: rgba(255,255,255,0.06);
+  --card-shadow: 0 1px 3px rgba(0,0,0,0.2), 0 4px 14px rgba(0,0,0,0.25);
+  --card-shadow-hover: 0 2px 8px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.35);
+}
+
+/* ── Reset & base ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  color: var(--ink);
+  background: var(--ground);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+a { color: var(--accent); text-decoration: none; transition: color 0.2s; }
+a:hover { color: var(--accent-hover); }
+img { max-width: 100%; display: block; }
+h1, h2, h3, h4 { font-family: 'DM Serif Display', 'Georgia', serif; font-weight: 400; line-height: 1.2; }
+::selection { background: var(--accent); color: #fff; }
+
+/* ── Layout ── */
+.container { max-width: 72rem; margin: 0 auto; padding: 0 clamp(1.5rem, 5vw, 3rem); }
+.section { padding: clamp(4rem, 8vw, 7rem) 0; }
+.section-title {
+  font-size: clamp(1.75rem, 3vw, 2.25rem);
+  color: var(--ink);
+  margin-bottom: 0.5rem;
+}
+.section-subtitle {
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.75rem;
+}
+.section-intro {
+  color: var(--ink-secondary);
+  max-width: 42rem;
+  margin-bottom: 3rem;
+}
+.section--alt { background: var(--surface-alt); }
+
+/* ── Nav ── */
+#main-nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  transition: background 0.3s, border-color 0.3s, backdrop-filter 0.3s;
+  border-bottom: 1px solid transparent;
+}
+#main-nav.scrolled {
+  background: var(--nav-bg-scrolled);
+  border-bottom-color: var(--nav-border-scrolled);
+  backdrop-filter: blur(12px);
+}
+.nav-inner {
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 0 clamp(1.5rem, 5vw, 3rem);
+  height: 3.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-name {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.25rem;
+  color: var(--hero-text);
+  transition: color 0.3s;
+  text-decoration: none;
+}
+#main-nav.scrolled .nav-name { color: var(--nav-text-scrolled); }
+.nav-links { display: flex; gap: 2rem; }
+.nav-links a {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--hero-muted);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.nav-links a:hover { color: var(--hero-text); }
+#main-nav.scrolled .nav-links a { color: var(--ink-muted); }
+#main-nav.scrolled .nav-links a:hover { color: var(--ink); }
+
+.nav-toggle {
+  display: none;
+  background: none; border: none; cursor: pointer;
+  width: 28px; height: 20px;
+  position: relative;
+  flex-shrink: 0;
+}
+.nav-toggle span {
+  position: absolute; left: 0; height: 2px; width: 100%;
+  background: var(--hero-text);
+  transition: all 0.3s;
+  border-radius: 1px;
+}
+#main-nav.scrolled .nav-toggle span { background: var(--nav-text-scrolled); }
+.nav-toggle span:nth-child(1) { top: 0; }
+.nav-toggle span:nth-child(2) { top: 9px; }
+.nav-toggle span:nth-child(3) { top: 18px; }
+.nav-toggle.open span:nth-child(1) { top: 9px; transform: rotate(45deg); }
+.nav-toggle.open span:nth-child(2) { opacity: 0; }
+.nav-toggle.open span:nth-child(3) { top: 9px; transform: rotate(-45deg); }
+
+/* ── Hero ── */
+#hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:
+    radial-gradient(ellipse at 65% 55%, rgba(26,107,90,0.07) 0%, transparent 55%),
+    radial-gradient(ellipse at 30% 40%, rgba(212,149,58,0.04) 0%, transparent 45%),
+    var(--hero-bg);
+  text-align: center;
+  padding: 6rem 1.5rem 4rem;
+}
+.hero-inner { max-width: 52rem; }
+.hero-accent-line {
+  width: 48px;
+  height: 2px;
+  background: var(--gilt);
+  margin: 0 auto 2.5rem;
+}
+#hero h1 {
+  font-size: clamp(2.5rem, 5.5vw, 4.5rem);
+  color: var(--hero-text);
+  letter-spacing: -0.01em;
+  margin-bottom: 1rem;
+}
+.hero-phd {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 0.45em;
+  font-weight: 300;
+  color: var(--hero-muted);
+  vertical-align: baseline;
+}
+.hero-role {
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: var(--hero-muted);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 1.75rem;
+}
+.hero-tagline {
+  font-size: clamp(1.05rem, 2vw, 1.25rem);
+  color: var(--hero-text);
+  opacity: 0.85;
+  max-width: 38rem;
+  margin: 0 auto 3rem;
+  line-height: 1.6;
+}
+
+.hero-stats {
+  display: flex;
+  justify-content: center;
+  gap: clamp(1.5rem, 4vw, 3.5rem);
+  flex-wrap: wrap;
+  margin-bottom: 2.5rem;
+  padding: 1.75rem 0;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+.stat { text-align: center; min-width: 5rem; }
+.stat-number, .stat-text {
+  display: block;
+  font-family: 'DM Serif Display', serif;
+  font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+  color: var(--gilt);
+  line-height: 1.1;
+}
+.stat-plus {
+  font-family: 'DM Serif Display', serif;
+  font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+  color: var(--gilt);
+}
+.stat-label {
+  display: block;
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--hero-muted);
+  margin-top: 0.35rem;
+}
+
+.hero-links { display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; }
+.hero-links a {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--hero-muted);
+  text-decoration: none;
+  transition: color 0.2s;
+  position: relative;
+}
+.hero-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: var(--gilt);
+  transition: width 0.3s;
+}
+.hero-links a:hover { color: var(--hero-text); }
+.hero-links a:hover::after { width: 100%; }
+
+/* ── About ── */
+.about-content { max-width: 42rem; }
+.about-content p { margin-bottom: 1.5rem; color: var(--ink-secondary); }
+.about-content p:first-child { color: var(--ink); font-size: 1.125rem; }
+.about-content em { font-style: italic; color: var(--ink); font-weight: 500; }
+.about-personal {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border);
+  color: var(--ink-muted) !important;
+  font-size: 0.9375rem !important;
+  font-style: italic;
+}
+
+/* ── Research ── */
+.research-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+}
+.research-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 2rem 1.75rem;
+  position: relative;
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+.research-card:hover {
+  box-shadow: var(--card-shadow-hover);
+  transform: translateY(-2px);
+}
+.research-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  border-radius: 6px 6px 0 0;
+}
+.research-card:nth-child(1)::before { background: var(--accent); }
+.research-card:nth-child(2)::before { background: var(--gilt); }
+.research-card:nth-child(3)::before { background: var(--ink-muted); }
+.research-card .card-pillar {
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+.research-card:nth-child(1) .card-pillar { color: var(--accent); }
+.research-card:nth-child(2) .card-pillar { color: var(--gilt); }
+.research-card:nth-child(3) .card-pillar { color: var(--ink-muted); }
+.card-title { font-size: 1.375rem; margin-bottom: 0.75rem; color: var(--ink); }
+.card-hook { font-size: 0.9375rem; color: var(--ink-secondary); margin-bottom: 1.25rem; }
+.card-items { list-style: none; margin-bottom: 1.5rem; }
+.card-items li {
+  font-size: 0.875rem;
+  color: var(--ink-secondary);
+  padding: 0.4rem 0;
+  padding-left: 1rem;
+  position: relative;
+  line-height: 1.55;
+}
+.card-items li::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 0.75rem;
+  width: 4px; height: 4px;
+  border-radius: 50%;
+  background: var(--border-strong);
+}
+.card-impact {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--accent);
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+  line-height: 1.5;
+}
+
+/* ── Publications ── */
+.pub-featured { margin-bottom: 3rem; }
+.pub-item {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--border);
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 1rem;
+  align-items: start;
+}
+.pub-item:first-child { border-top: 1px solid var(--border); }
+.pub-venue {
+  display: inline-block;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 0.2rem 0.55rem;
+  border-radius: 3px;
+  margin-right: 0.5rem;
+}
+.pub-venue--top { background: var(--gilt-subtle); color: var(--gilt); }
+.pub-venue--journal { background: var(--accent-subtle); color: var(--accent); }
+.pub-venue--conf { background: var(--surface-alt); color: var(--ink-muted); }
+.pub-venue--preprint { background: var(--surface-alt); color: var(--ink-muted); }
+.pub-year { font-size: 0.75rem; color: var(--ink-muted); margin-left: 0.25rem; }
+.pub-title-line { margin-top: 0.5rem; }
+.pub-title {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.0625rem;
+  color: var(--ink);
+  line-height: 1.35;
+}
+.pub-desc {
+  font-size: 0.875rem;
+  color: var(--ink-muted);
+  margin-top: 0.35rem;
+  line-height: 1.5;
+}
+.pub-badge {
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--gilt);
+  margin-top: 0.3rem;
+  white-space: nowrap;
+}
+.pub-citations {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  white-space: nowrap;
+}
+.pub-cite-count {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.75rem;
+  color: var(--gilt);
+  line-height: 1;
+}
+.pub-cite-label {
+  font-size: 0.625rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+}
+
+.pub-section-title {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+  margin-top: 2.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.pub-compact { padding: 1rem 0; border-bottom: 1px solid var(--border); }
+.pub-compact:first-of-type { border-top: 1px solid var(--border); }
+.pub-compact .pub-title { font-size: 0.9375rem; }
+.pub-compact .pub-desc { font-size: 0.8125rem; }
+
+.pub-summary {
+  margin-top: 2.5rem;
+  padding: 1.5rem 2rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.pub-summary-stats {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.pub-summary-stat {
+  text-align: center;
+}
+.pub-summary-num {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.5rem;
+  color: var(--ink);
+  display: block;
+  font-variant-numeric: tabular-nums;
+}
+.pub-summary-label {
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+}
+.pub-scholar-link {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--accent);
+  padding: 0.6rem 1.25rem;
+  border: 1px solid var(--accent);
+  border-radius: 4px;
+  transition: background 0.2s, color 0.2s;
+}
+.pub-scholar-link:hover {
+  background: var(--accent);
+  color: #fff;
+}
+
+/* ── Experience ── */
+.timeline { max-width: 42rem; margin-top: 2.5rem; }
+.timeline-item {
+  padding: 0 0 2.5rem 2.25rem;
+  border-left: 2px solid var(--border);
+  position: relative;
+}
+.timeline-item:last-child { padding-bottom: 0; border-left-color: transparent; }
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -6px; top: 6px;
+  width: 10px; height: 10px;
+  border-radius: 50%;
+  background: var(--border-strong);
+  border: 2px solid var(--ground);
+}
+.timeline-item.current::before { background: var(--accent); }
+.timeline-item.current { border-left-color: var(--accent); }
+.timeline-dates {
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+  margin-bottom: 0.25rem;
+}
+.timeline-current-badge {
+  display: inline-block;
+  font-size: 0.625rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background: var(--accent-subtle);
+  color: var(--accent);
+  padding: 0.15rem 0.5rem;
+  border-radius: 3px;
+  margin-left: 0.5rem;
+}
+.timeline-role {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.1875rem;
+  color: var(--ink);
+  margin-bottom: 0.15rem;
+}
+.timeline-org {
+  font-size: 0.875rem;
+  color: var(--ink-secondary);
+  margin-bottom: 0.75rem;
+}
+.timeline-highlights {
+  list-style: none;
+}
+.timeline-highlights li {
+  font-size: 0.8125rem;
+  color: var(--ink-muted);
+  padding: 0.2rem 0;
+  padding-left: 0.875rem;
+  position: relative;
+  line-height: 1.55;
+}
+.timeline-highlights li::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 0.55rem;
+  width: 3px; height: 3px;
+  border-radius: 50%;
+  background: var(--border-strong);
+}
+
+/* ── Education ── */
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr));
+  gap: 1.25rem;
+  margin-top: 2rem;
+}
+.education-card {
+  padding: 1.25rem 1.5rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+}
+.education-degree {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1rem;
+  color: var(--ink);
+  margin-bottom: 0.25rem;
+}
+.education-school { font-size: 0.8125rem; color: var(--ink-secondary); }
+.education-year { font-size: 0.75rem; color: var(--ink-muted); }
+
+/* ── Awards ── */
+.awards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.award-item {
+  padding: 1.25rem 1.5rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+}
+.award-item--highlight {
+  border-color: var(--gilt);
+  background: var(--gilt-subtle);
+}
+.award-year {
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gilt);
+  margin-bottom: 0.35rem;
+}
+.award-title {
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: var(--ink);
+  margin-bottom: 0.25rem;
+  line-height: 1.4;
+}
+.award-desc { font-size: 0.8125rem; color: var(--ink-muted); line-height: 1.5; }
+
+/* ── Service ── */
+.service-section { margin-top: 3rem; }
+.service-section h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: var(--ink);
+}
+.reviewer-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.reviewer-tag {
+  font-size: 0.8125rem;
+  padding: 0.35rem 0.85rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  color: var(--ink-secondary);
+}
+.leadership-items { list-style: none; }
+.leadership-items li {
+  font-size: 0.9375rem;
+  color: var(--ink-secondary);
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--border);
+  line-height: 1.5;
+}
+.leadership-items li:last-child { border-bottom: none; }
+.leadership-items strong { font-weight: 500; color: var(--ink); }
+
+/* ── Talks ── */
+.talks-list { list-style: none; margin-top: 1.5rem; max-width: 42rem; }
+.talks-list li {
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--border);
+}
+.talks-list li:first-child { border-top: 1px solid var(--border); }
+.talk-title { font-size: 0.9375rem; color: var(--ink); font-weight: 500; line-height: 1.4; }
+.talk-venue { font-size: 0.8125rem; color: var(--ink-muted); margin-top: 0.2rem; }
+
+/* ── Skills ── */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+.skill-group h4 {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.65rem;
+}
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+.skill-tag {
+  font-size: 0.75rem;
+  padding: 0.25rem 0.6rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  color: var(--ink-secondary);
+}
+
+/* ── Personal ── */
+.personal-content {
+  max-width: 38rem;
+  margin: 0 auto;
+  text-align: center;
+}
+.personal-content p {
+  font-size: 1rem;
+  color: var(--ink-secondary);
+  margin-bottom: 1.25rem;
+  line-height: 1.7;
+}
+.personal-divider {
+  width: 40px;
+  height: 2px;
+  background: var(--gilt);
+  margin: 2rem auto;
+}
+
+/* ── Footer ── */
+footer {
+  background: var(--hero-bg);
+  color: var(--hero-muted);
+  padding: 4rem 0 2.5rem;
+  text-align: center;
+}
+.footer-name {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.375rem;
+  color: var(--hero-text);
+  margin-bottom: 0.75rem;
+}
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 2.5rem;
+}
+.footer-links a {
+  font-size: 0.875rem;
+  color: var(--hero-muted);
+  transition: color 0.2s;
+}
+.footer-links a:hover { color: var(--hero-text); }
+.footer-copy {
+  font-size: 0.75rem;
+  color: var(--hero-muted);
+  opacity: 0.5;
+}
+
+/* ── Animations ── */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+@media (prefers-reduced-motion: reduce) {
+  .reveal { opacity: 1; transform: none; transition: none; }
+}
+
+/* ── Focus ── */
+a:focus-visible, button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .nav-toggle { display: block; }
+  .nav-links {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: var(--hero-bg);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+    z-index: 99;
+  }
+  .nav-links.open { opacity: 1; pointer-events: auto; }
+  .nav-links a {
+    font-size: 1.25rem;
+    color: var(--hero-muted) !important;
+  }
+  .nav-links a:hover { color: var(--hero-text) !important; }
+  .nav-toggle { z-index: 101; }
+  .hero-stats { gap: 1.5rem; }
+  .stat { min-width: 4rem; }
+  .pub-item { grid-template-columns: 1fr; }
+  .pub-citations { flex-direction: row; align-items: center; gap: 0.4rem; }
+  .pub-cite-count { font-size: 1.25rem; }
+  .pub-summary { flex-direction: column; text-align: center; }
+}
+@media (max-width: 480px) {
+  .hero-stats { justify-content: space-around; }
+}
+</style>
+</head>
+<body>
+
+<!-- ════════════════ NAV ════════════════ -->
+<nav id="main-nav">
+  <div class="nav-inner">
+    <a href="#" class="nav-name">Praitayini Kanakaraj</a>
+    <button class="nav-toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#publications">Publications</a>
+      <a href="#experience">Experience</a>
+      <a href="#service">Service</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ════════════════ HERO ════════════════ -->
+<section id="hero">
+  <div class="hero-inner">
+    <div class="hero-accent-line"></div>
+    <h1>Praitayini Kanakaraj<span class="hero-phd">, Ph.D.</span></h1>
+    <p class="hero-role">AI / ML Research Scientist</p>
+    <p class="hero-tagline">Building AI that makes brain imaging reliable, fair, and clinically actionable — for every patient, everywhere.</p>
+    <div class="hero-stats">
+      <div class="stat">
+        <span class="stat-number" data-target="573">0</span><span class="stat-plus">+</span>
+        <span class="stat-label">Citations</span>
+      </div>
+      <div class="stat">
+        <span class="stat-number" data-target="58">0</span><span class="stat-plus">+</span>
+        <span class="stat-label">Publications</span>
+      </div>
+      <div class="stat">
+        <span class="stat-text">Nature</span>
+        <span class="stat-label">2026</span>
+      </div>
+      <div class="stat">
+        <span class="stat-text">US Patent</span>
+        <span class="stat-label">Provisional</span>
+      </div>
+      <div class="stat">
+        <span class="stat-text">FDA</span>
+        <span class="stat-label">Research</span>
+      </div>
+    </div>
+    <div class="hero-links">
+      <a href="https://scholar.google.com/citations?user=-OqtkuEAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
+      <a href="https://linkedin.com/in/praitayini" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/praitayini" target="_blank" rel="noopener">GitHub</a>
+      <a href="mailto:praitayini@gmail.com">Email</a>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════ ABOUT ════════════════ -->
+<section id="about" class="section">
+  <div class="container">
+    <div class="reveal">
+      <p class="section-subtitle">About</p>
+      <h2 class="section-title">At the intersection of AI and healthcare</h2>
+    </div>
+    <div class="about-content reveal">
+      <p>I am a computer vision and medical imaging researcher driven by a single conviction: when a physician reads a brain scan, the numbers they see should reflect biology — not the quirks of the scanner that captured it.</p>
+
+      <p>During my Ph.D. at Vanderbilt University, I developed physics-informed neural networks that predict and correct scanner-specific distortions directly from imaging data — eliminating errors of 10–30% that had been silently corrupting quantitative brain measurements across multi-center studies for decades. These corrections enabled two landmark downstream studies: the <em>first comprehensive normative white matter brain charts</em>, published in <em>Nature</em> (2026) across 42 cohorts worldwide, and the <em>largest study of white matter asymmetry</em> ever conducted (26,000+ scans, <em>Human Brain Mapping</em>, 2026).</p>
+
+      <p>At the U.S. FDA's Center for Devices and Radiological Health, I developed <em>BEHYPE</em> — a framework that detects when AI-based medical devices "think differently" about different patient subgroups, uncovering biases in breast imaging classifiers that affect patients with dense breast tissue. Now at Bioscope AI, I'm building a precision longevity platform that transforms raw brain scans into quantitative health profiles — 95+ structure segmentation, normative contextualization, brain-age estimation, and AI-powered clinical interpretation — pursuing regulatory clearance as a Software as a Medical Device.</p>
+
+      <p class="about-personal">Originally from Coimbatore, India, I've studied and worked across three continents. When I'm not building neural networks, you'll find me training for a marathon, on a yoga mat, or exploring a new city. I believe the best science happens when curiosity extends beyond the bench.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════ RESEARCH ════════════════ -->
+<section id="research" class="section section--alt">
+  <div class="container">
+    <div class="reveal">
+      <p class="section-subtitle">Research</p>
+      <h2 class="section-title">Three pillars of impact</h2>
+      <p class="section-intro">My research sits on three interconnected pillars — each addressing a fundamental challenge in getting AI to work safely and equitably in clinical medicine.</p>
+    </div>
+    <div class="research-grid">
+
+      <div class="research-card reveal">
+        <p class="card-pillar">Pillar I</p>
+        <h3 class="card-title">Reliable Medical Imaging</h3>
+        <p class="card-hook">Scanner-specific artifacts can introduce 10–30% errors in brain measurements, undermining the multi-center studies that modern neuroscience depends on.</p>
+        <ul class="card-items">
+          <li><strong>DeepN4</strong> — deep learning replacement for the N4ITK bias field correction algorithm, trained on 9,000+ images from 5+ cohorts. Contributed as open-source to the DIPY library, used by thousands of researchers worldwide.</li>
+          <li><strong>Gradient nonlinearity correction</strong> — comprehensive suite for modeling and correcting spatially varying gradient field errors in diffusion MRI. 5 first-author papers, 1 provisional US patent.</li>
+          <li><strong>Distortion correction</strong> — co-authored methods for correcting susceptibility-induced distortions without reverse phase-encoding (153 citations, most-cited work).</li>
+        </ul>
+        <p class="card-impact">Enabled the first normative white matter brain charts (Nature, 2026) and the largest white matter asymmetry study (HBM, 2026, 26K+ scans)</p>
+      </div>
+
+      <div class="research-card reveal">
+        <p class="card-pillar">Pillar II</p>
+        <h3 class="card-title">Fair &amp; Trustworthy AI</h3>
+        <p class="card-hook">AI in healthcare must work equally well for every patient. I build tools that detect and measure when it doesn't.</p>
+        <ul class="card-items">
+          <li><strong>BEHYPE</strong> (Bias Evaluation using Hyperdimensional Computing) — model-agnostic framework for detecting bias in AI-based medical devices. Developed at the U.S. FDA's CDRH. Encodes feature representations into hypervectors to detect when a model treats different subgroups differently.</li>
+          <li><strong>LLM reasoning safety</strong> — co-authored research on trace-level synthesis in mixture-of-agents systems and measuring causal mechanisms vs. statistical artifacts in LLM probes.</li>
+          <li><strong>Regulatory science</strong> — authored internal CDRH review on LLM applications in clinical workflows.</li>
+        </ul>
+        <p class="card-impact">Presented at FDA Scientific Research Day and FDA AI/ML Program. Applied to real breast imaging classifiers.</p>
+      </div>
+
+      <div class="research-card reveal">
+        <p class="card-pillar">Pillar III</p>
+        <h3 class="card-title">Clinical AI Translation</h3>
+        <p class="card-hook">Research only matters if it reaches patients. I build the infrastructure that bridges the gap between AI models and clinical care.</p>
+        <ul class="card-items">
+          <li><strong>AI Incubator</strong> — designed and deployed a HIPAA-compliant clinical AI platform at Vanderbilt University Medical Center. Containerized 6 AI tools across 7 departments, interfacing with 7.4M+ image series for 246,000 patients.</li>
+          <li><strong>XNAT platform</strong> — managed 379+ projects, 48,556+ subjects, 480,000+ scans. Built BIDS export tooling independently replicated at Brown, Oxford, and UCL.</li>
+          <li><strong>Bioscope AI</strong> — building a precision longevity platform producing quantitative brain health profiles with 95+ structure segmentation, normative percentile contextualization, brain-age estimation, and disease-pattern selectors for 7 neurodegenerative conditions.</li>
+        </ul>
+        <p class="card-impact">Serving 7 departments across VUMC. BIDS tooling adopted across 78 projects and replicated internationally.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════ PUBLICATIONS ════════════════ -->
+<section id="publications" class="section">
+  <div class="container">
+    <div class="reveal">
+      <p class="section-subtitle">Publications</p>
+      <h2 class="section-title">Selected works</h2>
+      <p class="section-intro">Featured publications spanning neuroimaging, medical AI, regulatory science, and clinical infrastructure.</p>
+    </div>
+
+    <div class="pub-featured reveal">
+
+      <div class="pub-item">
+        <div>
+          <span class="pub-venue pub-venue--top">Nature</span><span class="pub-year">2026</span>
+          <div class="pub-title-line">
+            <p class="pub-title">Normative White Matter Brain Charts</p>
+            <p class="pub-desc">The first comprehensive normative white matter brain charts, analyzing data from 42 cohorts worldwide. Enabled by physics-informed scanner bias correction.</p>
+          </div>
+        </div>
+        <div class="pub-citations">
+          <span class="pub-cite-count">26</span>
+          <span class="pub-cite-label">citations</span>
+        </div>
+      </div>
+
+      <div class="pub-item">
+        <div>
+          <span class="pub-venue pub-venue--journal">PLoS ONE</span><span class="pub-year">2020</span>
+          <div class="pub-title-line">
+            <p class="pub-title">Susceptibility-Induced Distortion Correction Without Reverse Phase-Encoding</p>
+            <p class="pub-desc">Co-authored method for correcting geometric distortions in diffusion MRI without requiring additional acquisitions. Most-cited work.</p>
+          </div>
+        </div>
+        <div class="pub-citations">
+          <span class="pub-cite-count">153</span>
+          <span class="pub-cite-label">citations</span>
+        </div>
+      </div>
+
+      <div class="pub-item">
+        <div>
+          <span class="pub-venue pub-venue--journal">Magn Reson Med</span><span class="pub-year">2021</span>
+          <div class="pub-title-line">
+            <p class="pub-title">MASiVar: Multi-Site, Multi-Scanner Acquisition Variability Study</p>
+            <p class="pub-desc">Landmark multi-site study quantifying acquisition variability across scanners and sites in diffusion MRI.</p>
+          </div>
+        </div>
+        <div class="pub-citations">
+          <span class="pub-cite-count">61</span>
+          <span class="pub-cite-label">citations</span>
+        </div>
+      </div>
+
+      <div class="pub-item">
+        <div>
+          <span class="pub-venue pub-venue--top">Hum Brain Mapp</span><span class="pub-year">2026</span>
+          <div class="pub-title-line">
+            <p class="pub-title">White Matter Asymmetry Across the Human Brain</p>
+            <p class="pub-desc">The largest study of white matter asymmetry ever conducted. Co-first author. 26,000+ scans analyzed.</p>
+            <p class="pub-badge">Co-First Author</p>
+          </div>
+        </div>
+        <div class="pub-citations">
+          <span class="pub-cite-count">&mdash;</span>
+          <span class="pub-cite-label">new</span>
+        </div>
+      </div>
+
+      <div class="pub-item">
+        <div>
+          <span class="pub-venue pub-venue--journal">Neuroinformatics</span><span class="pub-year">2024</span>
+          <div class="pub-title-line">
+            <p class="pub-title">DeepN4: Deep Learning Replacement for N4ITK Bias Field Correction</p>
+            <p class="pub-desc">3D U-Net trained on 9,000+ T1-weighted images. Contributed as an open-source module to the DIPY library.</p>
+            <p class="pub-badge">First Author &middot; Open Source</p>
+          </div>
+        </div>
+        <div class="pub-citations">
+          <span class="pub-cite-count">29</span>
+          <span class="pub-cite-label">citations</span>
+        </div>
+      </div>
+
+      <div class="pub-item">
+        <div>
+          <span class="pub-venue pub-venue--journal">J Digit Imaging</span><span class="pub-year">2022</span>
+          <div class="pub-title-line">
+            <p class="pub-title">HIPAA-Compliant Clinical AI Platform at Vanderbilt University Medical Center</p>
+            <p class="pub-desc">Containerized 6 AI tools across 7 departments, interfacing with the ImageVU archive of 7.4M+ image series.</p>
+            <p class="pub-badge">First Author</p>
+          </div>
+        </div>
+        <div class="pub-citations">
+          <span class="pub-cite-count">16</span>
+          <span class="pub-cite-label">citations</span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="reveal">
+      <p class="pub-section-title">Additional Journal &amp; Conference Papers</p>
+
+      <div class="pub-compact">
+        <span class="pub-venue pub-venue--journal">PLoS ONE</span><span class="pub-year">2025</span>
+        <div class="pub-title-line">
+          <p class="pub-title">Scalable Neuroimaging Processing Infrastructure</p>
+          <p class="pub-desc">Processing tens of thousands of imaging datasets across clinical sites. 27 citations.</p>
+        </div>
+      </div>
+
+      <div class="pub-compact">
+        <span class="pub-venue pub-venue--conf">SPIE Med Imaging</span><span class="pub-year">2025</span>
+        <div class="pub-title-line">
+          <p class="pub-title">Multi-Site Quality Control for Neuroimaging</p>
+          <p class="pub-desc">Quality assurance framework for large-scale multi-site neuroimaging studies. 21 citations.</p>
+        </div>
+      </div>
+
+      <div class="pub-compact">
+        <span class="pub-venue pub-venue--conf">SPIE Med Imaging</span><span class="pub-year">2025</span>
+        <div class="pub-title-line">
+          <p class="pub-title">BEHYPE: Bias Evaluation Using Hyperdimensional Computing</p>
+          <p class="pub-desc">Model-agnostic bias detection framework for AI-based medical devices. Developed at U.S. FDA CDRH.</p>
+        </div>
+      </div>
+
+      <div class="pub-compact">
+        <span class="pub-venue pub-venue--journal">J Digit Imaging</span><span class="pub-year">2022</span>
+        <div class="pub-title-line">
+          <p class="pub-title">XNAT Platform with BIDS Export Functionality</p>
+          <p class="pub-desc">Co-first author. BIDS export adopted on 78 projects, independently replicated at Brown, Oxford, and UCL. 7 citations.</p>
+        </div>
+      </div>
+
+      <div class="pub-compact">
+        <span class="pub-venue pub-venue--conf">SPIE Med Imaging</span><span class="pub-year">2022</span>
+        <div class="pub-title-line">
+          <p class="pub-title">Mapping the Impact of Nonlinear Gradient Fields on dMRI Tensor Estimation</p>
+          <p class="pub-desc">Robert F. Wagner Best Student Paper Finalist — top ~1.5% of 1,000+ submissions.</p>
+          <p class="pub-badge">Best Student Paper Finalist</p>
+        </div>
+      </div>
+
+      <div class="pub-compact">
+        <span class="pub-venue pub-venue--conf">IEEE ISBI</span><span class="pub-year">2020</span>
+        <div class="pub-title-line">
+          <p class="pub-title">3D Organ Segmentation for Radiation Therapy Planning</p>
+          <p class="pub-desc">Deep learning approach for automated organ segmentation from CT imaging.</p>
+        </div>
+      </div>
+
+      <p class="pub-section-title">Preprints</p>
+
+      <div class="pub-compact">
+        <span class="pub-venue pub-venue--preprint">arXiv</span><span class="pub-year">2026</span>
+        <div class="pub-title-line">
+          <p class="pub-title">Beyond Consensus: Trace-Level Synthesis in Mixture of Agents</p>
+          <p class="pub-desc">Novel approach to reasoning synthesis across multi-agent LLM systems.</p>
+        </div>
+      </div>
+
+      <div class="pub-compact">
+        <span class="pub-venue pub-venue--preprint">arXiv</span><span class="pub-year">2026</span>
+        <div class="pub-title-line">
+          <p class="pub-title">When and How Long? Measuring Causal Mechanisms in LLM Probes</p>
+          <p class="pub-desc">Investigating causal mechanisms vs. statistical artifacts in large language model representations.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="pub-summary reveal">
+      <div class="pub-summary-stats">
+        <div class="pub-summary-stat">
+          <span class="pub-summary-num">25</span>
+          <span class="pub-summary-label">Journals</span>
+        </div>
+        <div class="pub-summary-stat">
+          <span class="pub-summary-num">24</span>
+          <span class="pub-summary-label">Conferences</span>
+        </div>
+        <div class="pub-summary-stat">
+          <span class="pub-summary-num">7</span>
+          <span class="pub-summary-label">Preprints</span>
+        </div>
+        <div class="pub-summary-stat">
+          <span class="pub-summary-num">1</span>
+          <span class="pub-summary-label">Book Chapter</span>
+        </div>
+        <div class="pub-summary-stat">
+          <span class="pub-summary-num">1</span>
+          <span class="pub-summary-label">Abstract</span>
+        </div>
+      </div>
+      <a href="https://scholar.google.com/citations?user=-OqtkuEAAAAJ" target="_blank" rel="noopener" class="pub-scholar-link">Full list on Google Scholar &rarr;</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ════════════════ EXPERIENCE ════════════════ -->
+<section id="experience" class="section section--alt">
+  <div class="container">
+    <div class="reveal">
+      <p class="section-subtitle">Experience</p>
+      <h2 class="section-title">Professional journey</h2>
+    </div>
+    <div class="timeline reveal">
+
+      <div class="timeline-item current">
+        <p class="timeline-dates">Nov 2025 – Present <span class="timeline-current-badge">Current</span></p>
+        <h3 class="timeline-role">AI/ML Research Scientist</h3>
+        <p class="timeline-org">Bioscope AI</p>
+        <ul class="timeline-highlights">
+          <li>Building a precision longevity platform integrating multi-omics data — genomics, microbiome, imaging, wearables, labs, and EHR</li>
+          <li>Designed the Bioscope Neuroimaging module: automated brain health profiles with 95+ structure segmentation, brain-age estimation, and disease-pattern selectors for 7 neurodegenerative conditions</li>
+          <li>LLM integration for clinical interpretation; pursuing SaMD regulatory clearance</li>
+        </ul>
+      </div>
+
+      <div class="timeline-item">
+        <p class="timeline-dates">Jun 2021 – Aug 2025</p>
+        <h3 class="timeline-role">Doctoral AI Researcher</h3>
+        <p class="timeline-org">Vanderbilt University — MASI Lab (PI: Dr. Bennett A. Landman)</p>
+        <ul class="timeline-highlights">
+          <li>Physics-informed deep learning for scanner bias correction in neuroimaging</li>
+          <li>DeepN4: open-source contribution to DIPY (dipy.org), used by thousands of researchers</li>
+          <li>Provisional US patent for gradient-nonlinearity estimation and correction in dMRI</li>
+          <li>Mentored 4+ junior PhD and Masters students</li>
+        </ul>
+      </div>
+
+      <div class="timeline-item">
+        <p class="timeline-dates">Jun 2024 – Oct 2024</p>
+        <h3 class="timeline-role">AI/ML Research Intern</h3>
+        <p class="timeline-org">U.S. Food &amp; Drug Administration — CDRH/OSEL</p>
+        <ul class="timeline-highlights">
+          <li>Developed BEHYPE framework for bias detection in breast imaging AI</li>
+          <li>Authored internal regulatory-science review on LLMs in clinical workflows</li>
+          <li>Invited talk at FDA Scientific Research Day</li>
+        </ul>
+      </div>
+
+      <div class="timeline-item">
+        <p class="timeline-dates">Aug 2019 – May 2021</p>
+        <h3 class="timeline-role">Staff Engineer, AI &amp; Medical Imaging</h3>
+        <p class="timeline-org">Vanderbilt University</p>
+        <ul class="timeline-highlights">
+          <li>HIPAA-compliant DICOM storage and AI evaluation platform across 7 departments</li>
+          <li>XNAT platform administration: 379+ projects, 48,556+ subjects, 480,000+ scans</li>
+          <li>BIDS-format export tooling replicated at Brown, Oxford, and UCL</li>
+        </ul>
+      </div>
+
+      <div class="timeline-item">
+        <p class="timeline-dates">Nov 2018 – May 2019</p>
+        <h3 class="timeline-role">Senior Research Aide</h3>
+        <p class="timeline-org">Brookhaven National Laboratory</p>
+        <ul class="timeline-highlights">
+          <li>Computational modeling of lipid metabolism with CUDA optimization</li>
+        </ul>
+      </div>
+
+      <div class="timeline-item">
+        <p class="timeline-dates">Aug 2017 – May 2019</p>
+        <h3 class="timeline-role">Graduate Research Assistant</h3>
+        <p class="timeline-org">Stony Brook University</p>
+        <ul class="timeline-highlights">
+          <li>3D organ segmentation for radiation therapy planning (IEEE ISBI, 2020)</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="reveal" style="margin-top:3rem;">
+      <p class="section-subtitle">Education</p>
+      <div class="education-grid">
+        <div class="education-card">
+          <p class="education-degree">Ph.D., Computer Science</p>
+          <p class="education-school">Vanderbilt University — Medical Image Processing</p>
+          <p class="education-year">2021 – 2025</p>
+        </div>
+        <div class="education-card">
+          <p class="education-degree">M.S., Biomedical Informatics</p>
+          <p class="education-school">Stony Brook University</p>
+          <p class="education-year">2017 – 2019</p>
+        </div>
+        <div class="education-card">
+          <p class="education-degree">B.E., Biomedical Engineering</p>
+          <p class="education-school">PSG College of Technology, India</p>
+          <p class="education-year">2013 – 2017</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════ AWARDS & SERVICE ════════════════ -->
+<section id="service" class="section">
+  <div class="container">
+    <div class="reveal">
+      <p class="section-subtitle">Recognition &amp; Service</p>
+      <h2 class="section-title">Awards &amp; professional service</h2>
+    </div>
+
+    <div class="awards-grid reveal">
+      <div class="award-item award-item--highlight">
+        <p class="award-year">2025</p>
+        <p class="award-title">Provisional US Patent</p>
+        <p class="award-desc">Gradient-nonlinearity estimation and correction in diffusion MRI. Vanderbilt University.</p>
+      </div>
+      <div class="award-item award-item--highlight">
+        <p class="award-year">2022</p>
+        <p class="award-title">Robert F. Wagner Best Student Paper Finalist</p>
+        <p class="award-desc">SPIE Medical Imaging — top ~1.5% of 1,000+ submitted papers.</p>
+      </div>
+      <div class="award-item">
+        <p class="award-year">2022</p>
+        <p class="award-title">Best Poster Award</p>
+        <p class="award-desc">Vanderbilt University Institute of Imaging Science (VUIIS).</p>
+      </div>
+      <div class="award-item">
+        <p class="award-year">2022 – 2024</p>
+        <p class="award-title">University Travel Grants</p>
+        <p class="award-desc">Vanderbilt University competitive travel awards for SPIE and ISMRM conferences.</p>
+      </div>
+      <div class="award-item">
+        <p class="award-year">2017</p>
+        <p class="award-title">Study Abroad Scholarship</p>
+        <p class="award-desc">Full scholarship to Flinders University, Australia.</p>
+      </div>
+    </div>
+
+    <!-- Talks -->
+    <div class="service-section reveal">
+      <h3>Invited Talks</h3>
+      <ul class="talks-list">
+        <li>
+          <p class="talk-title">Diverging Representations in AI Models for Improved Transparency</p>
+          <p class="talk-venue">FDA Scientific Research Day — August 2024</p>
+        </li>
+        <li>
+          <p class="talk-title">Bias Evaluation in AI Models</p>
+          <p class="talk-venue">FDA AI/ML Program — 2024</p>
+        </li>
+        <li>
+          <p class="talk-title">Efficient Approximate Signal Reconstruction for Correction of Gradient Nonlinearities</p>
+          <p class="talk-venue">VUIIS Retreat — October 2023</p>
+        </li>
+        <li>
+          <p class="talk-title">Deep Learning for Medical Images</p>
+          <p class="talk-venue">Dr. N.G.P. Institute of Technology, India — 2022</p>
+        </li>
+        <li>
+          <p class="talk-title">Mapping the Impact of Nonlinear Gradient Fields on dMRI Tensor Estimation</p>
+          <p class="talk-venue">SPIE Medical Imaging — February 2022</p>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Reviewer -->
+    <div class="service-section reveal">
+      <h3>Peer Reviewer</h3>
+      <div class="reviewer-list">
+        <span class="reviewer-tag">NeuroImage</span>
+        <span class="reviewer-tag">Human Brain Mapping</span>
+        <span class="reviewer-tag">IEEE Trans. Signal Processing</span>
+        <span class="reviewer-tag">Scientific Reports</span>
+        <span class="reviewer-tag">Magnetic Resonance Imaging</span>
+        <span class="reviewer-tag">Digital Health</span>
+        <span class="reviewer-tag">J. Neurological Sciences</span>
+        <span class="reviewer-tag">SPIE Medical Imaging</span>
+        <span class="reviewer-tag">QIMS</span>
+      </div>
+    </div>
+
+    <!-- Leadership -->
+    <div class="service-section reveal">
+      <h3>Leadership</h3>
+      <ul class="leadership-items">
+        <li><strong>Women of VISE Steering Committee</strong> — Organized networking and mentorship events for women in imaging sciences, 2021–2024</li>
+        <li><strong>MASI Lab Operations Lead</strong> — Onboarding, code-review coordination, and compute administration, 2023–2025</li>
+        <li><strong>Graduate Senator</strong> — Stony Brook University, 2018–2019</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- ════════════════ SKILLS ════════════════ -->
+<section class="section section--alt">
+  <div class="container">
+    <div class="reveal">
+      <p class="section-subtitle">Expertise</p>
+      <h2 class="section-title">Technical skills</h2>
+    </div>
+    <div class="skills-grid reveal">
+      <div class="skill-group">
+        <h4>Programming &amp; ML</h4>
+        <div class="skill-tags">
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">PyTorch</span>
+          <span class="skill-tag">TensorFlow</span>
+          <span class="skill-tag">scikit-learn</span>
+          <span class="skill-tag">CUDA</span>
+          <span class="skill-tag">ONNX</span>
+          <span class="skill-tag">MATLAB</span>
+          <span class="skill-tag">C++</span>
+          <span class="skill-tag">R</span>
+          <span class="skill-tag">SQL</span>
+          <span class="skill-tag">Bash</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h4>Medical Imaging</h4>
+        <div class="skill-tags">
+          <span class="skill-tag">Structural MRI</span>
+          <span class="skill-tag">Diffusion MRI</span>
+          <span class="skill-tag">fMRI</span>
+          <span class="skill-tag">CT</span>
+          <span class="skill-tag">PET</span>
+          <span class="skill-tag">DIPY</span>
+          <span class="skill-tag">ANTs</span>
+          <span class="skill-tag">FreeSurfer</span>
+          <span class="skill-tag">FSL</span>
+          <span class="skill-tag">3D Slicer</span>
+          <span class="skill-tag">MRtrix3</span>
+          <span class="skill-tag">ITK</span>
+          <span class="skill-tag">NiBabel</span>
+          <span class="skill-tag">VTK</span>
+          <span class="skill-tag">SPM</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h4>Deep Learning</h4>
+        <div class="skill-tags">
+          <span class="skill-tag">3D CNNs</span>
+          <span class="skill-tag">U-Net</span>
+          <span class="skill-tag">ResNets</span>
+          <span class="skill-tag">Transformers</span>
+          <span class="skill-tag">GANs</span>
+          <span class="skill-tag">VAE</span>
+          <span class="skill-tag">Diffusion Models</span>
+          <span class="skill-tag">LLMs</span>
+          <span class="skill-tag">Physics-Informed NNs</span>
+          <span class="skill-tag">Spherical CNNs</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h4>Infrastructure</h4>
+        <div class="skill-tags">
+          <span class="skill-tag">Docker</span>
+          <span class="skill-tag">Singularity</span>
+          <span class="skill-tag">AWS</span>
+          <span class="skill-tag">GCP</span>
+          <span class="skill-tag">Git</span>
+          <span class="skill-tag">GitHub Actions</span>
+          <span class="skill-tag">HPC (SLURM/PBS)</span>
+          <span class="skill-tag">DICOM</span>
+          <span class="skill-tag">BIDS</span>
+          <span class="skill-tag">XNAT</span>
+          <span class="skill-tag">REST APIs</span>
+          <span class="skill-tag">HIPAA Compliance</span>
+          <span class="skill-tag">FDA Regulatory Science</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════ PERSONAL ════════════════ -->
+<section class="section">
+  <div class="container">
+    <div class="personal-content reveal">
+      <p class="section-subtitle" style="text-align:center;">Beyond the Lab</p>
+      <h2 class="section-title" style="text-align:center;">Life outside research</h2>
+      <div class="personal-divider"></div>
+      <p>I grew up in Coimbatore, a city in southern India known for its engineering colleges and its proximity to the Western Ghats. From there, I've followed curiosity across three continents — studying in Australia on a full scholarship, researching at Brookhaven National Laboratory, and completing my Ph.D. at Vanderbilt in Nashville.</p>
+      <p>When I'm not debugging a neural network or reading a paper, you'll find me training for a marathon, on a yoga mat, or exploring a new city with a good coffee in hand. I believe deeply that the curiosity which drives good science is the same curiosity that makes life interesting — and I try to bring that energy to everything I do.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════ FOOTER ════════════════ -->
+<footer id="contact">
+  <div class="container">
+    <p class="footer-name">Praitayini Kanakaraj, Ph.D.</p>
+    <div class="footer-links">
+      <a href="mailto:praitayini@gmail.com">praitayini@gmail.com</a>
+      <a href="mailto:praitayini.kanakaraj@bioscope.ai">praitayini.kanakaraj@bioscope.ai</a>
+      <a href="https://scholar.google.com/citations?user=-OqtkuEAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
+      <a href="https://linkedin.com/in/praitayini" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/praitayini" target="_blank" rel="noopener">GitHub</a>
+    </div>
+    <p class="footer-copy">&copy; 2026 Praitayini Kanakaraj</p>
+  </div>
+</footer>
+
+<script>
+(function() {
+  // Nav scroll
+  const nav = document.getElementById('main-nav');
+  const heroH = document.getElementById('hero').offsetHeight;
+  function onScroll() {
+    nav.classList.toggle('scrolled', window.scrollY > 60);
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  // Mobile menu
+  const toggle = document.querySelector('.nav-toggle');
+  const links = document.querySelector('.nav-links');
+  toggle.addEventListener('click', function() {
+    toggle.classList.toggle('open');
+    links.classList.toggle('open');
+  });
+  links.querySelectorAll('a').forEach(function(a) {
+    a.addEventListener('click', function() {
+      toggle.classList.remove('open');
+      links.classList.remove('open');
+    });
+  });
+
+  // Smooth scroll
+  document.querySelectorAll('a[href^="#"]').forEach(function(a) {
+    a.addEventListener('click', function(e) {
+      var target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        e.preventDefault();
+        var offset = nav.offsetHeight + 16;
+        var top = target.getBoundingClientRect().top + window.scrollY - offset;
+        window.scrollTo({ top: top, behavior: 'smooth' });
+      }
+    });
+  });
+
+  // Reveal on scroll
+  var reveals = document.querySelectorAll('.reveal');
+  var obs = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        obs.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+  reveals.forEach(function(el) { obs.observe(el); });
+
+  // Count-up animation for hero stats
+  var counted = false;
+  var statObs = new IntersectionObserver(function(entries) {
+    if (counted) return;
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        counted = true;
+        document.querySelectorAll('.stat-number[data-target]').forEach(function(el) {
+          var target = parseInt(el.dataset.target, 10);
+          var duration = 1800;
+          var start = performance.now();
+          function tick(now) {
+            var elapsed = now - start;
+            var progress = Math.min(elapsed / duration, 1);
+            var eased = 1 - Math.pow(1 - progress, 3);
+            el.textContent = Math.round(eased * target);
+            if (progress < 1) requestAnimationFrame(tick);
+          }
+          requestAnimationFrame(tick);
+        });
+        statObs.disconnect();
+      }
+    });
+  }, { threshold: 0.5 });
+  var statsEl = document.querySelector('.hero-stats');
+  if (statsEl) statObs.observe(statsEl);
+})();
+</script>
+</body>
+</html>
