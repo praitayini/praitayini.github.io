@@ -296,6 +296,12 @@ h1, h2, h3, h4 { font-family: 'DM Serif Display', 'Georgia', serif; font-weight:
 .hero-links a:hover::after { width: 100%; }
 
 /* ── About ── */
+.about-layout {
+  display: grid;
+  grid-template-columns: 1fr 280px;
+  gap: 3.5rem;
+  align-items: start;
+}
 .about-content { max-width: 42rem; }
 .about-content p { margin-bottom: 1.5rem; color: var(--ink-secondary); }
 .about-content p:first-child { color: var(--ink); font-size: 1.125rem; }
@@ -307,6 +313,29 @@ h1, h2, h3, h4 { font-family: 'DM Serif Display', 'Georgia', serif; font-weight:
   color: var(--ink-muted) !important;
   font-size: 0.9375rem !important;
   font-style: italic;
+}
+.about-photo {
+  width: 280px;
+  height: 360px;
+  border-radius: 6px;
+  overflow: hidden;
+  position: sticky;
+  top: 5rem;
+}
+.about-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 15%;
+}
+@media (max-width: 900px) {
+  .about-layout { grid-template-columns: 1fr; }
+  .about-photo {
+    width: 200px;
+    height: 260px;
+    margin: 0 auto 2rem;
+    position: static;
+  }
 }
 
 /* ── Research ── */
@@ -710,6 +739,19 @@ h1, h2, h3, h4 { font-family: 'DM Serif Display', 'Georgia', serif; font-weight:
   margin: 0 auto;
   text-align: center;
 }
+.personal-photo {
+  width: 220px;
+  height: 280px;
+  border-radius: 6px;
+  overflow: hidden;
+  margin: 0 auto 2rem;
+}
+.personal-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 12%;
+}
 .personal-content p {
   font-size: 1rem;
   color: var(--ink-secondary);
@@ -875,14 +917,19 @@ a:focus-visible, button:focus-visible {
       <p class="section-subtitle">About</p>
       <h2 class="section-title">At the intersection of AI and healthcare</h2>
     </div>
-    <div class="about-content reveal">
-      <p>I am a computer vision and medical imaging researcher driven by a single conviction: when a physician reads a brain scan, the numbers they see should reflect biology — not the quirks of the scanner that captured it.</p>
+    <div class="about-layout reveal">
+      <div class="about-content">
+        <p>I am a computer vision and medical imaging researcher driven by a single conviction: when a physician reads a brain scan, the numbers they see should reflect biology — not the quirks of the scanner that captured it.</p>
 
-      <p>During my Ph.D. at Vanderbilt University, I developed physics-informed neural networks that predict and correct scanner-specific distortions directly from imaging data — eliminating errors of 10–30% that had been silently corrupting quantitative brain measurements across multi-center studies for decades. These corrections enabled two landmark downstream studies: the <em>first comprehensive normative white matter brain charts</em>, published in <em>Nature</em> (2026) across 42 cohorts worldwide, and the <em>largest study of white matter asymmetry</em> ever conducted (26,000+ scans, <em>Human Brain Mapping</em>, 2026).</p>
+        <p>During my Ph.D. at Vanderbilt University, I developed physics-informed neural networks that predict and correct scanner-specific distortions directly from imaging data — eliminating errors of 10–30% that had been silently corrupting quantitative brain measurements across multi-center studies for decades. These corrections enabled two landmark downstream studies: the <em>first comprehensive normative white matter brain charts</em>, published in <em>Nature</em> (2026) across 42 cohorts worldwide, and the <em>largest study of white matter asymmetry</em> ever conducted (26,000+ scans, <em>Human Brain Mapping</em>, 2026).</p>
 
-      <p>At the U.S. FDA's Center for Devices and Radiological Health, I developed <em>BEHYPE</em> — a framework that detects when AI-based medical devices "think differently" about different patient subgroups, uncovering biases in breast imaging classifiers that affect patients with dense breast tissue. Now at Bioscope AI, I'm building a precision longevity platform that transforms raw brain scans into quantitative health profiles — 95+ structure segmentation, normative contextualization, brain-age estimation, and AI-powered clinical interpretation — pursuing regulatory clearance as a Software as a Medical Device.</p>
+        <p>At the U.S. FDA's Center for Devices and Radiological Health, I developed <em>BEHYPE</em> — a framework that detects when AI-based medical devices "think differently" about different patient subgroups, uncovering biases in breast imaging classifiers that affect patients with dense breast tissue. Now at Bioscope AI, I'm building a precision longevity platform that transforms raw brain scans into quantitative health profiles — 95+ structure segmentation, normative contextualization, brain-age estimation, and AI-powered clinical interpretation — pursuing regulatory clearance as a Software as a Medical Device.</p>
 
-      <p class="about-personal">Originally from Coimbatore, India, I've studied and worked across three continents. When I'm not building neural networks, you'll find me training for a marathon, on a yoga mat, or exploring a new city. I believe the best science happens when curiosity extends beyond the bench.</p>
+        <p class="about-personal">Originally from Coimbatore, India, I've studied and worked across three continents. When I'm not building neural networks, you'll find me training for a marathon, on a yoga mat, or exploring a new city. I believe the best science happens when curiosity extends beyond the bench.</p>
+      </div>
+      <div class="about-photo">
+        <img src="images/hero.jpg" alt="Praitayini Kanakaraj at Vanderbilt University" loading="lazy">
+      </div>
     </div>
   </div>
 </section>
@@ -1414,6 +1461,9 @@ a:focus-visible, button:focus-visible {
       <p class="section-subtitle" style="text-align:center;">Beyond the Lab</p>
       <h2 class="section-title" style="text-align:center;">Life outside research</h2>
       <div class="personal-divider"></div>
+      <div class="personal-photo">
+        <img src="images/personal.jpg" alt="Praitayini Kanakaraj — Vanderbilt Ph.D. graduation" loading="lazy">
+      </div>
       <p>I grew up in Coimbatore, a city in southern India known for its engineering colleges and its proximity to the Western Ghats. From there, I've followed curiosity across three continents — studying in Australia on a full scholarship, researching at Brookhaven National Laboratory, and completing my Ph.D. at Vanderbilt in Nashville.</p>
       <p>When I'm not debugging a neural network or reading a paper, you'll find me training for a marathon, on a yoga mat, or exploring a new city with a good coffee in hand. I believe deeply that the curiosity which drives good science is the same curiosity that makes life interesting — and I try to bring that energy to everything I do.</p>
     </div>
